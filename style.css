@@ -1,0 +1,160 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+#hero {
+  height: 100vh;
+  background: linear-gradient(to bottom, #1a1a1a, #000);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-text {
+  z-index: 2;
+  max-width: 800px;
+}
+
+#hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4rem;
+  color: #ff4c4c;
+  text-shadow: 0 0 10px #ff4c4c88;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 1rem;
+}
+
+.tagline {
+  font-style: italic;
+  color: #00ffff;
+  margin-top: 0.5rem;
+}
+
+#gameCanvas {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #ff4c4c;
+  box-shadow: 0 0 30px #ff4c4c88;
+  z-index: 1;
+}
+
+/* Sticky Nav */
+#sticky-nav {
+  position: sticky;
+  top: 0;
+  background: #111;
+  padding: 0.75rem 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 5px #000;
+}
+
+#sticky-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+#sticky-nav a {
+  color: #00ffff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#sticky-nav a:hover {
+  color: #ff4c4c;
+}
+
+/* Sections */
+main {
+  padding: 2rem 1rem;
+}
+
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #1a1a1a;
+  border-left: 4px solid #ff4c4c;
+  box-shadow: 0 0 10px #000;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #ff4c4c;
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+/* Code Blocks */
+pre {
+  background: #111;
+  padding: 1rem;
+  overflow-x: auto;
+  border-left: 4px solid #00ffff;
+  margin-bottom: 1rem;
+}
+
+code {
+  color: #00ffcc;
+  font-family: 'Courier New', monospace;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111;
+  color: #666;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+
+  #sticky-nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  #gameCanvas {
+    width: 100%;
+    max-width: 90vw;
+  }
+}
